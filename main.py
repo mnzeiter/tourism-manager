@@ -3,10 +3,10 @@ import mysql.connector
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = '193.203.168.121'
-app.config['MYSQL_USER'] = 'u247334135_etourism'
-app.config['MYSQL_PASSWORD'] = '&9A;RKh4K'
-app.config['MYSQL_DATABASE'] = 'u247334135_etourism'
+app.config['MYSQL_HOST'] = 'SET-HERE-HOST'
+app.config['MYSQL_USER'] = 'SET-USER'
+app.config['MYSQL_PASSWORD'] = 'SET-USER'
+app.config['MYSQL_DATABASE'] = 'SET-DATABASE-NAME'
 
 mydb = mysql.connector.connect(
     host=app.config['MYSQL_HOST'],
@@ -308,3 +308,4 @@ def delete_tourist(tourist_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
